@@ -2,9 +2,12 @@
 
 Welcome to the **DeckChatbot Monorepo** — a full-stack AI-powered assistant designed to streamline the quoting, sketching, and logic validation process for deck construction projects.
 
----
- codex/clean-up-project-and-verify-routing
 
+codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+codex/clean-up-project-and-verify-routing
+
+ main
 ## 🧠 Scope of Work
 
 You are reviewing a monorepo containing:
@@ -15,22 +18,34 @@ You are reviewing a monorepo containing:
 Include logic, files, routes, and scripts from *all* folders — including any submodules.
 
 Ignore unrelated system files or directories outside this project.
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ main
  main
 
 ## 📦 Project Structure
 
 ```
+codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+deckchatbot-monorepo/
+
  codex/clean-up-project-and-verify-routing
 .
 
 deckchatbot-monorepo/
  main
+main
 ├── frontend/        # React or HTML-based UI for user interaction
 ├── backend-ai/      # FastAPI / Python backend with AI integrations
 ├── .vscode/         # IDE settings and extensions
 ├── PROMPT.md        # Instruction file for project-wide automation and cleanup
 ├── README.md        # You're here!
 ```
+
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+
+## 🎯 Core Features
 
 
 
@@ -50,6 +65,7 @@ For a high-level design, see [Real-Time 3D Deck Design Blueprint](docs/REALTIME_
 
 Write React/JavaScript code snippets (using react-three-fiber and standard Three.js classes) illustrating how to set up the scene, create and update the extruded floor geometry, handle mouse interaction for selecting and dragging parts, and generate a PDF with deck dimensions. 
  main
+ main
 
 - **Dynamic Deck Shape Builder**: L-shape, octagon, and custom sketch input.
 - **Image Upload with AI Recognition**: OCR + vision model analysis.
@@ -57,7 +73,7 @@ Write React/JavaScript code snippets (using react-three-fiber and standard Three
 - **Ollama Integration**: Running LLaVA-Llama3 model for image + text queries.
 - **Drag & Drop Support**: Upload drawings or images directly to calculate.
 
----
+
 
 ## 🚀 Getting Started
 
@@ -66,12 +82,18 @@ Write React/JavaScript code snippets (using react-three-fiber and standard Three
 ```bash
 git clone https://github.com/yourusername/deckchatbot-monorepo.git
 cd deckchatbot-monorepo
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
  codex/clean-up-project-and-verify-routing
 
+main
 
 # create a .env with your keys
 echo "OPENAI_API_KEY=your-key" > .env
 echo "DEBUG=true" >> .env
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ main
  main
 ```
 
@@ -79,6 +101,11 @@ echo "DEBUG=true" >> .env
 
 ```bash
 cd backend-ai
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+# (Activate your environment or install requirements)
+poetry install
+poetry run uvicorn API.api:app --reload
+
  codex/clean-up-project-and-verify-routing
 poetry install
 uvicorn API.api:app --reload
@@ -86,6 +113,7 @@ uvicorn API.api:app --reload
 # (Activate your environment or install requirements)
 poetry install
 poetry run uvicorn API.api:app --reload
+ main
  main
 ```
 
@@ -96,6 +124,11 @@ cd ../frontend
 npm install
 npm run dev
 ```
+
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+Then open `http://localhost:3000/deck-viewer.html` in your browser to try the new 3D deck viewer built with Babylon.js. Use the toolbar to render a deck and export blueprint screenshots or a GLB model.
+
+
 
  codex/clean-up-project-and-verify-routing
 The frontend will use `PYTHON_API_URL` (default `http://localhost:8000`) to
@@ -115,6 +148,7 @@ Then open `http://localhost:3000/deck-viewer.html` in your browser to try the ne
  main
 
 
+main
 
 ## 🧠 AI Integration
 
@@ -126,7 +160,11 @@ ollama run llava-llama3
 
 - HuggingFace support through `xtuner` (model loaders / pipelines)
 
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+---
 
+
+ main
 
 ## 🗂 Prompt-based Automation
 
@@ -136,7 +174,7 @@ See `PROMPT.md` for full instructions on:
 - Logical merging of duplicate files
 - Enhancing layout logic, routing, and data flow
 
----
+
 
 ## 📌 TODO (Contributions Welcome!)
 

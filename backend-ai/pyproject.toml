@@ -16,10 +16,15 @@ pydantic = "*"
 pillow = "*"
 numpy = "*"
 scipy = "*"
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+python-multipart = "*"
+requests = "*"
+
  codex/clean-up-project-and-verify-routing
 
 python-multipart = "*"
 requests = "*"
+ main
  main
 
 [tool.poetry.group.dev.dependencies]

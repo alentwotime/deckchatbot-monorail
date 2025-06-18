@@ -1,8 +1,11 @@
 {
   "dependencies": {
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
  codex/clean-up-project-and-verify-routing
 
     "axios": "^1.6.7",
+ main
  main
     "better-sqlite3": "^9.6.0",
     "compression": "^1.8.0",
@@ -10,6 +13,10 @@
     "dotenv": "^16.5.0",
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+    "express-validator": "^7.0.1",
+    "helmet": "^7.2.0",
+
  codex/clean-up-project-and-verify-routing
     "helmet": "^7.2.0",
     "jimp": "^1.6.0",
@@ -22,15 +29,24 @@
     "express-validator": "^7.0.1",
     "helmet": "^7.2.0",
     "huggingface": "^1.4.0",
+ main
     "jimp": "^1.6.0",
     "mathjs": "^14.5.2",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+    "openai": "^5.3.0",
+    "sharp": "^0.34.2",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "axios": "^1.6.7"
+
     "node-fetch": "^3.3.2",
     "openai": "^5.3.0",
     "sharp": "^0.34.2",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"
+ main
  main
   },
   "devDependencies": {
@@ -39,12 +55,17 @@
     "nodemon": "^3.0.2"
   },
   "scripts": {
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+
  codex/clean-up-project-and-verify-routing
     "start": "node index.js",
     "dev": "nodemon index.js",
 
     "start": "node server.js",
     "dev": "nodemon server.js",
+ main
  main
     "test": "jest",
     "test:watch": "jest --watch",

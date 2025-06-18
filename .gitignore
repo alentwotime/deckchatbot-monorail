@@ -2,8 +2,8 @@
 node_modules/
  codex/clean-up-project-and-verify-routing
 __pycache__/
-=======
 __py_cache__/
+ main
  main
 *.py[cod]
 *.sqlite3
@@ -18,14 +18,21 @@ __py_cache__/
 *.tmp
 *.bak
 *.swp
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+*.env
+*.env.*
+
  codex/clean-up-project-and-verify-routing
 *.env
 *.env.*
  
+ main
 
 # OS-specific
 .DS_Store
 Thumbs.db
+
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
 
 codex/clean-up-project-and-verify-routing
 
@@ -33,6 +40,7 @@ codex/clean-up-project-and-verify-routing
 *.env
 !.env.example
 
+ main
 # Root ignore rule: ignore everything...
 /*
 
@@ -44,6 +52,12 @@ codex/clean-up-project-and-verify-routing
 !README.md
 !PROMPT.md
 !LICENSE
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+!.env
+frontend/memory.sqlite
+frontend/logs/*.json
+
 !run.sh
 !run.bat
 !docs/
+ main

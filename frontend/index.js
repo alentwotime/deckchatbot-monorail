@@ -4,6 +4,11 @@ const { app, logger } = require('./server.js');
 const config = require('./config');
 
 const PORT = config.PORT ?? 3000;
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+const useCluster = process.env.CLUSTER === 'true';
+
+if (useCluster && cluster.isPrimary) {
+
  codex/clean-up-project-and-verify-routing
 
 if (cluster.isPrimary) {
@@ -11,6 +16,7 @@ if (cluster.isPrimary) {
 const useCluster = process.env.CLUSTER === 'true';
 
 if (useCluster && cluster.isPrimary) {
+ main
  main
   const numCPUs = os.cpus().length;
   logger.info(
@@ -43,10 +49,14 @@ if (useCluster && cluster.isPrimary) {
   });
 } else {
   app.listen(PORT, () => {
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+    logger.info(`🚀 Deck Chatbot Server running on http://localhost:${PORT}`);
+
  codex/clean-up-project-and-verify-routing
     logger.info(`✅ Worker ${process.pid} running at http://localhost:${PORT}`);
 
     logger.info(`🚀 Deck Chatbot Server running on http://localhost:${PORT}`);
+ main
  main
   });
 }

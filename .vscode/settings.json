@@ -4,11 +4,15 @@
     { "path": "backend-ai" }
   ],
   "settings": {
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+    "python.pythonPath": "backend-ai/.venv/Scripts/python.exe", 
+
 codex/clean-up-project-and-verify-routing
     "python.defaultInterpreterPath": "python",
 
     "python.pythonPath": "backend-ai/.venv/Scripts/python.exe", 
 
+ main
     "eslint.workingDirectories": [
       { "mode": "auto" },
       "frontend"
@@ -20,6 +24,9 @@ codex/clean-up-project-and-verify-routing
     "files.exclude": {
       "**/__pycache__": true,
       "**/.venv": true,
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+      "**/node_modules": true
+
  codex/clean-up-project-and-verify-routing
       "**/node_modules": true,
       "**/.codex-prompt.md": false
@@ -34,11 +41,17 @@ codex/clean-up-project-and-verify-routing
     }
   }
 }
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
  codex/clean-up-project-and-verify-routing
 
+ main
 {
   "files.exclude": {
     "**/.codex-prompt.md": false
   }
 }
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ main
  main
