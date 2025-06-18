@@ -75,4 +75,12 @@ app.listen(PORT, () => {
   logger.info(`🚀 Deck Chatbot Server running on http://localhost:${PORT}`);
 });
 
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
 module.exports = { app, logger };
+
+ codex/clean-up-project-and-verify-routing
+module.exports = { app, logger };
+
+module.exports = { app, logger };
+ main
+ main

@@ -1,5 +1,14 @@
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+
+ codex/clean-up-project-and-verify-routing
+require('dotenv').config();
+
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+ main
+ main
 
 const config = {
   // Server configuration
@@ -12,6 +21,13 @@ const config = {
   // API Keys
   OPENAI_API_KEY: process.env.OPENAI_API_KEY,
   API_KEY: process.env.API_KEY || 'revamp123secure',
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ codex/clean-up-project-and-verify-routing
+  PYTHON_API_URL: process.env.PYTHON_API_URL || 'http://localhost:8000',
+
+ main
+ main
   
   // Security
   JWT_SECRET: process.env.JWT_SECRET || 'fallback-secret-change-in-production',
@@ -47,4 +63,12 @@ if (config.NODE_ENV === 'production' && config.API_KEY === 'revamp123secure') {
   console.warn('⚠️  Warning: Using default API_KEY in production. Please set a secure API_KEY.');
 }
 
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
 module.exports = config;
+
+ codex/clean-up-project-and-verify-routing
+module.exports = config;
+
+module.exports = config;
+ main
+ main

@@ -1,20 +1,55 @@
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ codex/clean-up-project-and-verify-routing
+from fastapi import FastAPI, UploadFile, File
+from fastapi.middleware.cors import CORSMiddleware
+
+from llama_integration.predict import run_model
+
+ main
 import os
 import sqlite3
 from fastapi import FastAPI, UploadFile, File, Form, Body
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from llama_integration.llava_runner import run_llava
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ main
+ main
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
     allow_credentials=True,
+
+ codex/clean-up-project-and-verify-routing
+
+    allow_credentials=True,
+ main
+ main
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ codex/clean-up-project-and-verify-routing
+@app.get("/")
+def root():
+    return {"message": "Deckbot AI backend is alive!"}
+
+@app.post("/predict")
+async def predict(file: UploadFile = File(...)):
+    image_bytes = await file.read()
+    result = run_model(image_bytes)
+    return {"result": result}
+
+
+ main
 DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'deckchatbot.db')
 
 def init_db():
@@ -111,3 +146,7 @@ async def query_llava(image: UploadFile = File(...), prompt: str = Form(...)):
     data = await image.read()
     result = run_llava(data, prompt)
     return {"response": result}
+ codex/adapt-lowe’s-deck-designer-features-to-deckchatbot
+
+ main
+ main
